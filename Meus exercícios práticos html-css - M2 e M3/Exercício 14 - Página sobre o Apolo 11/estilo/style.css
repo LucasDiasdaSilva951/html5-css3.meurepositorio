@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url(../fontes/BebasNeue-Regular.otf);
+}
+@font-face {
+    font-family: 'MontSerrat';
+    src: url(../fontes/Montserrat-VariableFont_wght.ttf);
+}
+:root {
+    --fontetitulo: 'Bebas Neue', sans-serif;
+    --fontetextopadrão: 'MontSerrat', serif;
+
+    --cor1: white;
+    --cor2: black;
+    --cor3: #eda90c86;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+header > h1 {
+    text-align: center;  
+    background-color: var(--cor2); 
+    height: 50px;
+    font-family: var(--fontetitulo);
+}
