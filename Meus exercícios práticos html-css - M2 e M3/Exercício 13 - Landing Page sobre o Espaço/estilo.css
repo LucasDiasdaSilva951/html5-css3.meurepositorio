@@ -33,7 +33,7 @@ header > div {
     height: 100%;
     width: auto;
     border: 5px solid var(--cor6);
-    box-shadow: 1.6px 1.6px black;
+    box-shadow: 6px 6px 13px 0px black;
 }
 header > div > p {
     display: inline-block;
@@ -41,7 +41,7 @@ header > div > p {
     font-size: 2.5em;
     color: var(--cor1);
     font: bolder 4em var(--fontetitulo);
-    text-shadow: 1.5px 1.5px black;
+    text-shadow: 1.5px 1.5px 0px black;
 }
 header > div > p::before {
     content: '⚝';
@@ -58,7 +58,7 @@ header > nav {
     height: 50px;
     width: auto;
     border: 5px solid var(--cor5);
-    box-shadow: 1.6px 1.6px black;
+    box-shadow: 5px 5px 4px 0px black;
 }
 header > nav > ul {
     list-style-type: none;
@@ -70,7 +70,7 @@ header > nav > ul > li > a {
     padding-inline: 6px;
     color: var(--cor4);
     font: bolder 13.5px var(--fontepadrão);
-    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 0px black;
     text-decoration: none;
 }
 header > nav > ul > li > a:hover {
@@ -86,17 +86,17 @@ main > div > h1 {
     padding: 2px;
     font: bolder 4.2em var(--fontetitulo);
     color: var(--cor1);
-    text-shadow: 1.8px 1.8px black;
+    text-shadow: 1.8px 1.8px 0px black;
 }
 main > div > h3 {
     font: normal 1.3em var(--fontepadrão);
     color: var(--cor2);
-    text-shadow: 2.1px 2.1px black;
+    text-shadow: 2.1px 2.1px 0px black;
 }
 main > div > p {
     font: normal 1.025em var(--fontepadrão);
     color: var(--cor1);
-    text-shadow: 2.1px 2.1px black;
+    text-shadow: 2.1px 2.1px 0px black;
 }
 main > #botão {
     display: flex;
@@ -109,12 +109,13 @@ main > #botão {
     width: 300px;
     border: 5px solid #c99ac9;
     outline: 3px solid var(--cor2);
+    box-shadow: 5px 5px 4px 0px black;
 }
 main > #botão > p {
     font-family: var(--fontepadrão);
     text-align: center;
     color: var(--cor2);
-    text-shadow: 1.25px 1.25px black;
+    text-shadow: 1.25px 1.25px 0px black;
 }
 main > #botão > p::before {
     content: '🚀 ';
@@ -131,14 +132,14 @@ footer {
     padding: 10px;
     text-align: center;
     margin: auto;
-    box-shadow: 2px 2px black;
+    box-shadow: 5px 5px 4px 0px black;
     border: 10px solid var(--cor5);
 }
 footer > div > p {
     padding-inline: 8px;
     font: 18px var(--fontepadrão);
     display: inline;    
-    text-shadow: 0.5px 0.5px black;
+    text-shadow: 0.5px 0.5px 0px black;
 }
 footer > div > p.textorodapé > abbr { 
     text-decoration: none;
