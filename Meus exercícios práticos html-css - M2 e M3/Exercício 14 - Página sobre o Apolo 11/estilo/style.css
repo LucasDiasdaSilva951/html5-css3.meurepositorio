@@ -114,6 +114,7 @@ section#segundapartedosite {
     margin: auto;
     padding: 5px;
     background-image: url(../imagens/espaço2.jpg);
+    box-shadow: 1px 1px 0 var(--cor4);
 }
 section#segundapartedosite > h1 {
     font: 6em var(--fontetitulo);
