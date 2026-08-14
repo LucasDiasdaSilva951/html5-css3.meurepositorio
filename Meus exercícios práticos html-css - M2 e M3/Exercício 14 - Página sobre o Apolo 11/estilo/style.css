@@ -59,6 +59,7 @@ section#introdução > h1 {
     margin: 0;
     text-shadow: 2px 2px 2px var(--cor2);
     text-align: center;
+    margin: 0;
 }
 section#introdução > h2 {
     margin: 15px 0;
@@ -71,6 +72,7 @@ section#introdução > h2 {
     background-color: var(--cor4);
     text-shadow: 2px 2px 2px var(--cor2);
     text-align: center;
+    margin: 0;
 }
 section#introdução > p {
     font-family: var(--fontetextopadrão);
@@ -79,12 +81,13 @@ section#introdução > p {
     padding: 25px;
     text-shadow: 2px 2px 2px var(--cor2);
     line-height: 30px;
+    margin: 0;
 }
 section#introdução > nav {
     border: 0.2px solid transparent;
     background-color: var(--cor4);
-    padding: 8px;
-    margin: 3px;   
+    padding: 10px;
+    margin: 10px;   
     font-family: var(--fontetextopadrão);
     display: inline-block;
 }
@@ -104,10 +107,6 @@ section#introdução > nav > a {
 section#introdução > nav > a:hover {
     text-decoration: underline;
 }
-img {
-    max-height: 200px;
-    max-width: 300px;
-}
 section#segundapartedosite {
     max-width: 100%;
     max-height: 100%;
@@ -122,6 +121,7 @@ section#segundapartedosite > h1 {
     display: inline-block;
     background-color: var(--cor4);
     color: var(--cor1);
+    margin: 0;
 }
 section#segundapartedosite > #div1 > .titulo4, .titulo5 {
     font: 3.5em var(--fontetitulo);
@@ -132,6 +132,7 @@ section#segundapartedosite > #div1 > .titulo4, .titulo5 {
     background-image: url(../imagens/espaço.jpg);
     background-attachment: fixed;
     text-align: center;
+    margin: 0;
 }
 section#segundapartedosite > #div2 > .titulo4, .titulo5 {
     font: 3.5em var(--fontetitulo);
@@ -142,6 +143,7 @@ section#segundapartedosite > #div2 > .titulo4, .titulo5 {
     background-image: url(../imagens/espaço.jpg);
     background-attachment: fixed;
     text-align: center;
+    margin: 0;
 }
 section#segundapartedosite > #div3 > .titulo4, .titulo5 {
     font: 3.5em var(--fontetitulo);
@@ -152,6 +154,7 @@ section#segundapartedosite > #div3 > .titulo4, .titulo5 {
     background-image: url(../imagens/espaço.jpg);
     background-attachment: fixed;
     text-align: center;
+    margin: 0;
 }
 section#segundapartedosite > #div4 > .titulo4, .titulo5 {
     font: 3.5em var(--fontetitulo);
@@ -162,6 +165,7 @@ section#segundapartedosite > #div4 > .titulo4, .titulo5 {
     background-image: url(../imagens/espaço.jpg);
     background-attachment: fixed;
     text-align: center;
+    margin: 0;
 }
 section#segundapartedosite > #div1 > .paragrafo {
     font: 1em var(--fontetextopadrão);
@@ -171,6 +175,7 @@ section#segundapartedosite > #div1 > .paragrafo {
     background-color: var(--cor4);
     color: var(--cor1);
     padding: 30px;
+    margin: 0;
 }
 section#segundapartedosite > #div2 > .paragrafo {
     font: 1em var(--fontetextopadrão);
@@ -180,6 +185,7 @@ section#segundapartedosite > #div2 > .paragrafo {
     background-color: var(--cor4);
     color: var(--cor1);
     padding: 30px;
+    margin: 0;
 }
 section#segundapartedosite > #div3 > .paragrafo {
     font: 1em var(--fontetextopadrão);
@@ -189,6 +195,7 @@ section#segundapartedosite > #div3 > .paragrafo {
     background-color: var(--cor4);
     color: var(--cor1);
     padding: 30px;
+    margin: 0;
 }
 section#segundapartedosite > #div4 > .paragrafo {
     font: 1em var(--fontetextopadrão);
@@ -198,4 +205,87 @@ section#segundapartedosite > #div4 > .paragrafo {
     background-color: var(--cor4);
     color: var(--cor1);
     padding: 30px;
+    margin: 0;
+}
+section#terceirapartedosite {
+    background-image: url('../imagens/astronautaimg4.jpg');
+    background-size: cover;
+    background-position: center top;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 1000em;
+    text-shadow: 2px 2px 2px var(--cor2);
+}
+section#terceirapartedosite > div > h1 {
+    font: 3em var(--fontetitulo);
+    color: var(--cor1);
+    background-color: var(--cor4);
+    padding: 15px;
+    margin: 0;
+}
+section#terceirapartedosite > div > h5 {
+    font: 2em var(--fontetitulo);
+    color: var(--cor3);
+    background-color: var(--cor4);
+    padding: 30px;
+    margin: 0;
+}
+section#terceirapartedosite > div > p {
+    font: 1.5em var(--fontetextopadrão);
+    color: var(--cor6);
+    background-color: var(--cor4);
+    padding: 50px;
+    margin: 0;
+}
+section#terceirapartedosite > div > blockquote {
+    font: 1.5em var(--fontetextopadrão);
+    color: var(--cor3); 
+    background-color: var(--cor4);;
+    padding: 50px;
+    margin: 0;
+}
+section#quartapartedosite {
+    background-image: url('../imagens/sateliteimg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    text-shadow: 2px 2px 2px var(--cor2);
+}
+section#quartapartedosite > div > h1 {
+    font: 3em var(--fontetitulo);
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 15px;
+    margin: 0;
+}
+section#quartapartedosite > div > h5 {
+    font: 2em var(--fontetitulo);
+    background-color: var(--cor4);
+    color: var(--cor3);
+    padding: 15px;
+    margin: 0;
+}
+section#quartapartedosite > div > p {
+    font: 1.5em var(--fontetextopadrão);
+    background-color: var(--cor4);
+    color: var(--cor1);
+    margin: 0;
+    padding: 15px;
+}
+section#quartapartedosite > div > blockquote {
+    font: 1.5em var(--fontetextopadrão);
+    background-color: var(--cor4);
+    color: var(--cor3);
+    margin: 0;
+    padding: 30px;
+}
+footer {
+    font: 1.5em var(--fontetextopadrão);
+    text-align: center;
+    background-image: url('../imagens/astronautaimg5.jpg');
+    color: var(--cor1);
+    padding: 10px;
+    text-shadow: 2px 2px 2px var(--cor2);
 }
