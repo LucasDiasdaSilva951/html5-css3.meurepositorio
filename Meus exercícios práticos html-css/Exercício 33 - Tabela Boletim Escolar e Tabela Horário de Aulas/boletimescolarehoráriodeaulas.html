@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar e Quadro de Horários</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(177, 171, 164);
+        }
+        div#conteiner {
+            overflow-y: auto;
+        }
+        div#conteiner > table {
+            border-collapse: collapse;
+            width: 849px;
+        }
+        tr.célulaaluno, .notas {
+            background-color: rgba(99, 201, 99, 0.575);
+        }
+        tr#tituloprincipal {
+            background-color: rgb(163, 179, 174);
+        }
+        tr#titulosdatabela {
+            background-color: rgb(174, 226, 173);
+        }
+        tr.matérias {
+            background-color: whitesmoke;
+        }
+        td, th {
+            padding: 10px 35px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        div#conteiner2 {
+            overflow-y: auto;
+        }
+        div#conteiner2 > table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+        tr.horáriosedias {
+            background-color: rgb(174, 226, 173);
+        }
+        tr.aulas {
+            background-color: whitesmoke;
+        }
+        tr#intervalo, tr#fimdasaulas {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boletim Escolar</h1>
+    <div id="conteiner">
+        <table>
+            <caption>
+                <tr class="célulaaluno">
+                    <th colspan="3" rowspan="3" scope="rowgroup">Lucas</th>
+                </tr>
+                <tr class="matérias">
+                    <td>História</td>
+                    <td>8,0</td>
+                    <td>7,5</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr class="matérias">
+                    <td>Geografia</td>
+                    <td>6,0</td>
+                    <td>5,5</td>
+                    <td>Recuperação</td>
+                </tr>
+                <tr class="célulaaluno">
+                    <th colspan="3" rowspan="3" scope="rowgroup">Ana</th>
+                </tr>
+                <tr class="matérias">
+                    <td>História</td>
+                    <td>9,0</td>
+                    <td>8,5</td>
+                    <td>Aprovada</td>
+                </tr>
+                <tr class="matérias">
+                    <td>Geografia</td>
+                    <td>7,0</td>
+                    <td>8,0</td>
+                    <td>Aprovada</td>
+                </tr>
+            </caption>
+            <thead>
+                <tr id="tituloprincipal">
+                    <th colspan="8">Boletim Escolar</th>
+                </tr>
+                <tr id="titulosdatabela">
+                    <th rowspan="2" colspan="3" scope="colgroup">Aluno</th>
+                    <th rowspan="2" scope="colgroup">Matéria</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="colgroup">Situação</th>
+                </tr>
+                <tr>
+                    <th class="notas" scope="colgroup">Nota 1</th>
+                    <th class="notas" scope="colgroup">Nota 2</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <h1>Horário das aulas</h1>
+    <div id="conteiner2">
+        <table>
+            <caption>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="rowgroup">08:00</th>
+                </tr>
+                <tr class="aulas">
+                    <td>Matemática</td>
+                    <td>Português</td>
+                    <td>Química</td>
+                    <td>Matemática</td>
+                    <td>Inglês</td>
+                </tr>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="rowgroup">09:00</th>
+                </tr>
+                <tr class="aulas">
+                    <td>Matemática</td>
+                    <td>Português</td>
+                    <td>Química</td>
+                    <td>Física</td>
+                    <td>Inglês</td>
+                </tr>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="row">10:00</th>
+                </tr>
+                <tr id="intervalo">
+                    <td colspan="5">Intervalo</td>
+                </tr>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="rowgroup">11:00</th>
+                </tr>
+                <tr class="aulas">
+                    <td>Física</td>
+                    <td>Geografia</td>
+                    <td>História</td>
+                    <td>Biologia</td>
+                    <td>Ed.Física</td>
+                </tr>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="rowgroup">12:00</th>
+                </tr>
+                <tr class="aulas">
+                    <td>Física</td>
+                    <td>Geografia</td>
+                    <td>História</td>
+                    <td>Biologia</td>
+                    <td>Ed.Física</td>
+                </tr>
+                <tr class="horáriosedias">
+                    <th rowspan="2" scope="row">13:00</th>
+                </tr>
+                <tr id="fimdasaulas">
+                    <td colspan="5">Encerramento das aulas</td>
+                </tr>
+            </caption>
+            <thead>
+                <tr style="background-color: darkkhaki;">
+                    <th colspan="9" scope="colgroup">Cronograma de aulas</th>
+                </tr>
+                <tr class="horáriosedias">
+                    <th scope="colgroup">Horário</th>
+                    <th scope="colgroup">Segunda</th>
+                    <th scope="colgroup">Terça</th>
+                    <th scope="colgroup">Quarta</th>
+                    <th scope="colgroup">Quinta</th>
+                    <th scope="colgroup">Sexta</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>

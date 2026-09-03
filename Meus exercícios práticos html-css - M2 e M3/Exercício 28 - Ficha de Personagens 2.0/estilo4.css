@@ -1,0 +1,92 @@
+ @charset "UTF-8";
+ body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, #BF0A0A, #F2F2F2);
+    border: 10px solid rgb(168, 86, 95);
+    outline: 10px groove rgb(119, 32, 20);
+ }
+ @font-face {
+    font-family: 'Limão';
+    src: url(fontes/LEMONMILK-Bold.otf);
+ }
+ #titulo3 {
+    font: 400 3em 'Limão', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-image: linear-gradient(to right, #734E4E, #e0c9c9);
+ }
+ .personagem3 {
+    font: 2em 'Limão', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background-image: linear-gradient(to right, #5f5858, #b40d0d);
+ }
+ .secao3 {
+    font: 1.5em 'Limão', sans-serif;
+    text-align: center;
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to right, #351b1b8f, #791212);
+ }
+ @font-face {
+    font-family: 'Reboto';
+    src: url(fontes/Roboto-Condensed.ttf);
+ }
+ .paragrafo3 {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+ }
+ .paytone-one-regular {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal}
+.marcador3 {
+    font: 900 2em 'Paytone One', sans-serif;
+}
+.lista3 {
+    padding: 40px;
+    margin: auto;
+    background-image: linear-gradient(to right, #C4ABAB, #ED9191);
+}
+.efeito3, #retorno3 {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+    background-image: linear-gradient(to right, #C4ABAB, #ED9191);
+}
+#curiosidadeescondida3 {
+    color: rgb(0, 0, 0);
+}
+.efeito3:hover {
+    color: #BF0A0A;
+}
+.efeito3 > #curiosidadeescondida3 {
+    display: none;
+}
+.efeito3:hover > #curiosidadeescondida3 {
+    display: block;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 16px;
+    margin: auto;
+}
+.iniciodomuseu {
+    color: rgb(26, 16, 16);
+    text-decoration: none;
+}
+.iniciodomuseu:hover {
+    color: black;
+}
+#abreviador3 {
+    text-decoration: none;
+}
+.fundo {
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to right, #C4ABAB, #ED9191);
+}

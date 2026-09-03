@@ -1,0 +1,46 @@
+@charset "UTF-8";
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, #B7B5B3, #464e4a);
+    outline: 5px groove rgb(31, 27, 28);
+}
+@font-face {
+    font-family: 'Alberto';
+    src: url(fontes/Alberto\ Stencil.ttf);
+}
+#principal {
+    font: bold 2.5em 'Alberto';
+    text-align: center;
+    background-image: linear-gradient(to right,#94826f, #30321C);
+    padding: 15px 10px;
+    margin: auto;
+    border: 3px solid black;
+}
+.titulo2 {
+    font: bold 2.3em 'Alberto';
+    text-align: center;
+    background-image: linear-gradient(to right, #434A42, #00000098);
+    padding: 15px 10px;
+    margin: auto;
+    border: 3px solid black;
+}
+#titulo3 {
+    font: bold 1.7em 'Alberto';
+    text-align: center;
+    background-image: linear-gradient(to right, #2726268a, #6d6b6a);
+    padding: 15px 10px;
+    margin: auto;
+    border: 3px solid black;
+}
+@font-face {
+    font-family: 'Osvaldo';
+    src: url(fontes/Oswald-VariableFont_wght.ttf);
+}
+.paragrafo{
+    font: normal 1.5em 'Osvaldo';
+    background-image: linear-gradient(to right, #928383, #3d3b3b83);
+    padding: 15px 10px;
+    margin: auto;
+    border: 3px solid black;
+    text-align: justify;
+}

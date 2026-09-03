@@ -1,0 +1,92 @@
+@charset "UTF-8";
+body {
+    background-image: linear-gradient(to left, #b9b1a9bb, #3f240063);
+    background-attachment: fixed;
+    text-align: justify;
+    border: 10px solid rgb(55, 55, 31);
+    outline: 10px groove rgb(112, 41, 0);
+}
+@font-face {
+    font-family: 'Lemon';
+    src: url(fontes/LEMONMILK-Bold.otf);
+}
+#principal {
+    color: #050502;
+    font: 40px 'Lemon';
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    background-image: linear-gradient(to right, #7e633da2, #6b573b);
+}
+@font-face {
+    font-family: 'Reboto';
+    src: url(fontes/Roboto-Condensed.ttf);
+}
+.paragrafo, #retorno5 {
+    font: 25px 'Reboto', sans-serif;
+    padding: 20px;
+}
+.titulo2 {
+    font-family: 'Lemon';
+    text-align: center;
+    background-image: linear-gradient(to right, #7e633d65, #6b573b9f);
+    padding: 10px;
+    margin: auto;
+}
+.pontuação {
+    font: 900 29px 'Reboto', sans-serif;
+    padding: 7px;
+}
+p, li, ul {
+   background-image: linear-gradient(to top,#cebf94);
+    margin: auto;
+}
+abbr {
+    text-decoration: none;
+}
+#vader{
+    color: rgb(19, 19, 44);
+}
+#vader::before, #vader::after {
+    content: '⚔';
+}
+#batman {
+    color: rgb(41, 41, 61);
+}
+#batman::before, #batman::after {
+    content: '🦇';
+}
+#mario {
+    color: rgb(255, 0, 0);
+}
+#mario::before, #mario::after {
+    content: '🍄';
+}
+#link {
+    color: rgb(4, 75, 9);
+}
+#link::before, #link::after {
+    content: '🧝‍♂️';
+}
+#sobreomuseu {
+    color: rgb(41, 25, 8);
+}
+#sobreomuseu::before, #sobreomuseu::after {
+    content: '🏛️';
+}
+#vader:hover, #batman:hover, #mario:hover, #link:hover, #sobreomuseu:hover {
+    color: #5e5151
+}
+#vader, #batman, #mario, #link, #sobreomuseu {
+    text-decoration: none;
+}
+.iniciodomuseu {
+    color: rgb(26,16,16);
+    text-decoration: none;
+}
+.iniciodomuseu:hover {
+    color: black;
+}
+.abreviador5 {
+    text-decoration: none;
+}

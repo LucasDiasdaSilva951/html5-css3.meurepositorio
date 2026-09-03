@@ -1,0 +1,62 @@
+@charset "UTF-8";
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to left, #3066b6e1,#E80707);
+}
+@font-face {
+    font-family: 'Limão';
+    src: url(fontes/LEMONMILK-Bold.otf)
+}
+#principal {
+    font-family: 'Limão', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-image: linear-gradient(to left, #c79191, #868ca5);
+}
+.personagem {
+    font-family: 'Limão', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background-image: linear-gradient(to left, #db0000bd, #381e1e81);
+}
+.secao {
+    font-family: 'Limão', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to left, #8b282d, #706968);
+}
+@font-face {
+    font-family: 'Reboto';
+    src: url(fontes/Roboto-Condensed.ttf);
+}
+.paragrafo {
+    font-family: 'Reboto', serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}
+.letra {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.marcador {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+}
+.lista {
+    padding: 40px;
+    margin: auto;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}

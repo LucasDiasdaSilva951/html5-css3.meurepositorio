@@ -1,0 +1,92 @@
+ @charset "UTF-8";
+ body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to left, #005f08, #878859);
+    border: 10px solid rgb(105, 122, 33);
+    outline: 10px groove rgb(68, 66, 10);
+ }
+ @font-face {
+    font-family: 'Limão';
+    src: url(fontes/LEMONMILK-Bold.otf);
+ }
+ #titulo4 {
+    font: 400 3em 'Limão', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6dd376, #8f914a);
+ }
+ .personagem4 {
+    font: 2em 'Limão', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background-image: linear-gradient(to right, #63625ae7, #aacf8b);
+ }
+ .secao4, .titulo5 {
+    font: 1.5em 'Limão', sans-serif;
+    text-align: center;
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to right, #1b301e96, #5f5f2b);
+ }
+ @font-face {
+    font-family: 'Reboto';
+    src: url(fontes/Roboto-Condensed.ttf);
+ }
+ .paragrafo4 {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+ }
+ .paytone-one-regular {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-style: normal}
+.marcador4 {
+    font: 900 2em 'Paytone One', sans-serif;
+}
+.lista4 {
+    padding: 40px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6dd376, #8f914a);
+}
+.efeito4, #retorno4 {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+    background-image: linear-gradient(to right,#6dd376, #8f914a);
+}
+#curiosidadeescondida4 {
+    color: rgb(0, 0, 0);
+}
+.efeito4:hover {
+    color: #062001;
+}
+.efeito4 > #curiosidadeescondida4 {
+    display: none;
+}
+.efeito4:hover > #curiosidadeescondida4 {
+    display: block;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 16px;
+    margin: auto;
+}
+.iniciodomuseu {
+    color: rgb(26, 16, 16);
+    text-decoration: none;
+}
+.iniciodomuseu:hover {
+    color: black;
+}
+#abreviador4 {
+    text-decoration: none;
+}
+.fundo {
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to right, #6dd376, #8f914a);
+}

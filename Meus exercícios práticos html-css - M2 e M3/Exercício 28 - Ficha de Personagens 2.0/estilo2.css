@@ -1,0 +1,98 @@
+@charset "UTF-8";
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to left, #3066b6e1,#E80707);
+    border: 10px solid rgb(107, 20, 20);
+    outline: 10px groove rgb(15, 21, 42);
+}
+@font-face {
+    font-family: 'Limão';
+    src: url(fontes/LEMONMILK-Bold.otf)
+}
+#principal {
+    font: 400 3em 'Limão', sans-serif;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+    background-image: linear-gradient(to left, #c79191, #868ca5);
+}
+.personagem {
+    font: 2em 'Limão', sans-serif;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    background-image: linear-gradient(to left, #db0000bd, #381e1e81);
+}
+.secao {
+    font: 1.5em 'Limão', sans-serif;
+    text-align: center;
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to left, #8b282d, #706968);
+}
+.temporario {
+    font-family: 'Limão';
+    text-decoration: underline;
+}
+@font-face {
+    font-family: 'Reboto';
+    src: url(fontes/Roboto-Condensed.ttf);
+}
+.paragrafo {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+}
+.marcador {
+    font: 900 2em 'Paytone One', sans-serif;
+}
+.lista {
+    padding: 40px;
+    margin: auto;
+}
+.efeito {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}
+#curiosidadeescondida {
+    font-family: 'Reboto', serif;
+}
+.efeito:hover {
+    color: rgb(17, 15, 15);
+}
+.efeito > #curiosidadeescondida {
+    display: none;
+}
+.efeito:hover > #curiosidadeescondida {
+    display: block;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: justify;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}
+#retorno {
+    font: 600 1.5em 'Reboto', serif;
+    padding: 16px;
+    margin: auto;
+    text-align: justify;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}
+.iniciodomuseu {
+    color: rgb(26, 16, 16);
+    text-decoration: none;
+}
+.iniciodomuseu:hover {
+    color: #000000;
+}
+#abreviador {
+    text-decoration: none;
+}
+.fundo {
+    padding: 16px;
+    margin: auto;
+    background-image: linear-gradient(to right, #B0A2A2, #8A4C4C);
+}
