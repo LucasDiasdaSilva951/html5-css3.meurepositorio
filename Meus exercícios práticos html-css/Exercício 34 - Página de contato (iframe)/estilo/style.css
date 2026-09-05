@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 65px;    
+    margin: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+    margin-left: 10px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.simbolos {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(84, 84, 105);
+}
+
+div#infocontato {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a#sitehostnet {
+    text-decoration: none;
+}
+
+a#sitehostnet:hover {
+    text-decoration: underline;
+    background-color: gray;
+    padding: 15px;
+}
+
+div#conteiner {
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+}
+
+div#whatsapp {
+    background-color: gray;
+    padding: 15px;
+    margin: 30px;
+    box-shadow: 2px 2px 10px black;
+}
+
+div#whatsapp > div#link {
+    background-color: blue;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+div#whatsapp > div#link:hover {
+    background-color: green;
+}
+
+div#whatsapp > div#link > p > a > img {
+    width: 30px;
+    height: 30px;
+}
+
