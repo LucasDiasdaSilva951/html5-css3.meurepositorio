@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Jogador</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        fieldset {
+            font-weight: bold;            background-color: rgb(126, 126, 184);
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        label {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .botõesfinais {
+            padding-top: 5px;
+            padding-bottom: 5px;         
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Jogador</h1>
+    <fieldset>
+        <legend style="text-align: center;">Cadastro dos dados pessoais do Jogador</legend>
+
+        <label for="inome">Nome Completo: </label>
+        <input type="text" name="nome" id="inome" required minlength="3" placeholder="Nome Completo (Obrigatório)">
+
+        <label for="inomeusuario">Nome de Usuário: </label>
+        <input type="text" name="nomedeusuario" id="inomedeusuario" minlength="3" maxlength="15" placeholder="Nome do Usuário (Obrigatório)">
+        
+        <label for="isenha">Senha do Usuário: </label>
+        <input type="password" name="senha" id="isenha" required min="8" placeholder="Senha do Usuário (Obrigatório)">
+
+        <label for="iemail">Email do Usuário: </label>
+        <input type="email" name="email" id="iemail" required placeholder="E-mail do Usuário (Obrigatório)">
+
+        <label for="iidade">Idade do Usuário: </label>
+        <input type="number" name="idade" id="iidade" required placeholder="Idade do Usuário (Obrigatório)" min="10" max="100">
+
+        <label for="idatanascimento">Data de Nascimento do Usuário (Obrigatório): </label>
+        <input type="date" name="datanascimento" id="idatanascimento" required>
+
+        <label for="imesdenascimento">Mês de Nascimento do Usuário (Não Obrigatório): </label>
+        <input type="month" name="mesnascimento" id="imesnascimento">
+
+        <label for="idianascimento">Dia de Nascimento do Usuário (Não Obrigatório): </label>
+        <input type="number" name="dianascimento" id="idianascimento" min="1" max="31" placeholder="Dia de Nascimento do Usuário (Não Obrigatório)">
+
+        <label for="itel">Telefone do Usuário (Não Obrigatório): </label>
+        <input type="tel" name="tel" id="itel" min="11" placeholder="Telefone do Usuário (Não Obrigatório) -> Dica: (xx) xxxx-xxxx">
+
+        <label for="icorfav">Cor Favorita do Usuário (Não Obrigatório): </label>
+        <input type="color" name="corfav" id="icorfav" placeholder="Cor Favorita do Usuário (Não Obrigatório)">
+
+        <label for="ienvio">Limpar e Enviar: </label>
+        
+        <input type="reset" value="Limpar" class="botõesfinais">
+        <input type="submit" value="Enviar" class="botõesfinais" src="#">
+
+    </fieldset>
+</body>
+</html>
