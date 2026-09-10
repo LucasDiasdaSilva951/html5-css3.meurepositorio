@@ -17,6 +17,10 @@
             background-color: rgb(126, 126, 184);
         }
 
+        legend {
+            font-weight: bold;
+        }
+
         form > div {
             font-weight: bold;            
             display: flex;
@@ -42,9 +46,11 @@
     <h1>Cadastro de Jogador</h1>
     <fieldset>
 
+        <legend style="text-align: center;">Cadastro dos dados pessoais do Jogador</legend> 
+
         <form action="cadastro.php" method="post" autocomplete="on">
             
-            <legend style="text-align: center;">Cadastro dos dados pessoais do Jogador</legend>
+            
 
             <div>
                 <label for="inome">Nome Completo: </label>
