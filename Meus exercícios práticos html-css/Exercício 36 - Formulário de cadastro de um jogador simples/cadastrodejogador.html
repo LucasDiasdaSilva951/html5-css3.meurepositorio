@@ -15,25 +15,44 @@
 
         fieldset {
             background-color: rgb(126, 126, 184);
+            border-color: rgb(157, 157, 189);
+            color: rgb(19, 28, 36);
         }
 
         legend {
             font-weight: bold;
+            font-size: 20px;
         }
 
         form > div {
             font-weight: bold;            
             display: flex;
             flex-direction: column;
+            font-size: 20px;
+            padding: 10px;
         }
 
         input {
             text-align: center;
+            padding: 10px;
+            font-size: 20px;
         }
 
         label {
-            padding-top: 8px;
-            padding-bottom: 8px;
+            padding-top: 12px;
+            padding-bottom: 15px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 23px;
+        }
+
+        textarea {
+            font-size: 23px;
+            text-align: center;
+            display: flex;
+            align-items: center;
         }
 
         .botõesfinais {
@@ -53,28 +72,132 @@
             
 
             <div>
-                <label for="inome">Nome Completo: </label>
+                <label for="inome">Nome Completo (Obrigatório): </label>
                 <input type="text" name="nome" id="inome" required minlength="3" placeholder="Nome Completo (Obrigatório)">
             </div>
 
             <div>
-                <label for="inomeusuario">Nome de Usuário: </label>
+                <label for="inomeusuario">Nome de Usuário (Obrigatório): </label>
                 <input type="text" name="nomedeusuario" id="inomedeusuario" minlength="3" maxlength="15" placeholder="Nome do Usuário (Obrigatório)">
             </div>
             
             <div>
-                <label for="isenha">Senha do Usuário: </label>
+                <label for="isenha">Senha do Usuário (Obrigatório): </label>
                 <input type="password" name="senha" id="isenha" required min="8" placeholder="Senha do Usuário (Obrigatório)">
             </div>
 
             <div>
-                <label for="iemail">Email do Usuário: </label>
+                <label for="iemail">Email do Usuário (Obrigatório): </label>
                 <input type="email" name="email" id="iemail" required placeholder="E-mail do Usuário (Obrigatório)">
             </div>
 
             <div>
-                <label for="iidade">Idade do Usuário: </label>
+                <label for="iidade">Idade do Usuário (Obrigatório): </label>
                 <input type="number" name="idade" id="iidade" required placeholder="Idade do Usuário (Obrigatório)" min="10" max="100">
+            </div>
+
+            <div>
+                <label for="iestado">Estado do Usuário (Obrigatório): </label>
+                <select name="estado" id="iestado" required>
+                    
+                    <option value="">Nenhuma opção selecionada</option>
+                    
+                    <optgroup label="Região Norte">
+                        <option value="">Acre (AC)</option>
+                        <option value="">Amapá (AP)</option>
+                        <option value="">Amazonas (AM)</option>
+                        <option value="">Pará (PA)</option>
+                        <option value="">Rondônia (RO)</option>
+                        <option value="">Roraima (RR)</option>
+                        <option value="">Tocantins (TO)</option>
+                    </optgroup>
+                    
+                    <optgroup label="Região Nordeste">
+                        <option value="">Alagoas (AL)</option>
+                        <option value="">Bahia (BA)</option>
+                        <option value="">Ceará (CE)</option>
+                        <option value="">Maranhão (MA)</option>
+                        <option value="">Paraíba (PB)</option>
+                        <option value="">Pernambuco (PE)</option>
+                        <option value="">Piauí (PI)</option>
+                        <option value="">Rio Grande do Norte (RN)</option>
+                        <option value="">Sergipe (SE)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="">Distrito Federal (DF)</option>
+                        <option value="">Goiás (GO)</option>
+                        <option value="">Mato Grosso (MT)</option>
+                        <option value="">Mato Grosso do Sul (MS)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sudeste">
+                        <option value="">Espírito Santo (ES)</option>
+                        <option value="">Minas Gerais (MG)</option>
+                        <option value="">Rio de Janeiro (RJ)</option>
+                        <option value="">São Paulo (SP)</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option value="">Paraná (PR)</option>
+                        <option value="">Rio Grande do Sul (RS)</option>
+                        <option value="">Santa Catarina (SC)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label for="iprof">Emprego do Usuário (Não Obrigatório): </label>
+                <input type="text" name="prof" id="iprof" list="listaprof" placeholder="Digite ou selecione a sua profissão (Não Obrigatório)">
+                
+                <datalist id="listaprof">
+                    <option value="">Nenhuma opção selecionada</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Advogado">Advogado</option>
+                    <option value="Agricultor">Agricultor</option>
+                    <option value="Analista de Sistemas">Analista de Sistemas</option>
+                    <option value="Arquiteto">Arquiteto</option>
+                    <option value="Assistente Administrativo">Assistente Administrativo</option>
+                    <option value="Atendente">Atendente</option>
+                    <option value="Auxiliar de Enfermagem">Auxiliar de Enfermagem</option>
+                    <option value="Bancário">Bancário</option>
+                    <option value="Bibliotecário">Bibliotecário</option>
+                    <option value="Biólogo">Biólogo</option>
+                    <option value="Cabelereiro">Cabelereiro</option>
+                    <option value="Comerciante">Comerciante</option>
+                    <option value="Contador">Contador</option>               
+                    <option value="Cozinheiro">Cozinheiro</option>
+                    <option value="Dentista">Dentista</option>
+                    <option value="Designer">Designer</option>
+                    <option value="Desenvolvedor de Software">Desenvolvedor de Software</option>
+                    <option value="Eletricista">Eletricista</option>
+                    <option value="Enfermeiro">Enfermeiro</option>
+                    <option value="Engenheiro">Engenheiro</option>
+                    <option value="Estagiário">Estagiário</option>
+                    <option value="Farmacêutico">Farmacêutico</option>
+                    <option value="Fotográfo">Fotográfo</option>
+                    <option value="Garçom">Garçom</option>
+                    <option value="Jornalista">Jornalista</option>
+                    <option value="Mecânico">Mecânico</option>
+                    <option value="Médico">Médico</option>
+                    <option value="Motorista">Motorista</option>
+                    <option value="Nutricionista">Nutricionista</option>
+                    <option value="Pedreiro">Pedreiro</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Programador">Programador</option>
+                    <option value="Psicólogo">Psicólogo</option>
+                    <option value="Publicitário">Publicitário</option>
+                    <option value="Recepcionista">Recepcionista</option>
+                    <option value="Secretário">Secretário</option>
+                    <option value="Segurança">Segurança</option>
+                    <option value="Técnico de Informática">Técnico de Informática</option>
+                    <option value="Técnico de Enfermagem">Técnico de Enfermagem</option>
+                    <option value="Técnico em Eletrônica">Técnico em Eletrônica</option>
+                    <option value="Vendedor">Vendedor</option>
+                    <option value="Veterinário">Veterinário</option>
+                    <option value="Designer Web">Designer Web</option>         
+                    <option value="Outros">Outros</option>    
+                </datalist>
             </div>
 
             <div>
@@ -101,6 +224,41 @@
             <div>
                 <label for="icorfav">Cor Favorita do Usuário (Não Obrigatório): </label>
                 <input type="color" name="corfav" id="icorfav" placeholder="Cor Favorita do Usuário (Não Obrigatório)">
+            </div>
+
+            <div style="display: flex; align-items: right; flex-direction: row;">
+                <label for="">Sexo do Usuário (Não Obrigatório): </label>
+                <input type="radio" name="sexo" id="imas" value="M"><label for="imas">  Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">  Feminino</label>
+            </div>
+            <div style="display: inline;">
+                
+                <label for="">Selecione os Seus Esportes Favoritos (Não Obrigatório): </label> <br>
+                <p></p>
+                <input type="checkbox" name="esp" id="fut"><label for="fut"> Futebol</label> 
+                <input type="checkbox" name="esp" id="vol"><label for="vol"> Basquete</label>
+                <input type="checkbox" name="esp" id="vol"><label for="vol"> Vôlei</label>
+                <input type="checkbox" name="esp" id="ten"><label for="ten"> Tênis</label>
+                <input type="checkbox" name="esp" id="surf"><label for="surf"> Surf</label>
+                <input type="checkbox" name="esp" id="aut"><label for="aut"> Automobilismo</label>
+                <input type="checkbox" name="esp" id="futsal"><label for="futsal"> Futsal</label>
+                <p></p>
+            </div>
+
+            <div>
+                <label for="inivel">De 0 a 10, Qual o Seu Nível de Satisfação até agora? (Não Obrigatório)</label>
+                
+                <input type="range" name="nivel" id="inivel" min="1" max="10">
+            </div>
+
+            <div>
+                <label for="imsg">Caso queira, você pode nos enviar um feedback através de mensagem no campo abaixo!</label>
+                <textarea name="msg" id="imsg" rows="1" placeholder="Você pode inserir o seu feedback nesse espaço!"></textarea>
+            </div>
+
+            <div>
+                <label for="iarquivo">Deseja exportar algum arquivo para podermos conhecer você melhor?</label>
+                <input type="file" name="arquivo" id="iarquivo">
             </div>
 
             <div>
