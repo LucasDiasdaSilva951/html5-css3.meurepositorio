@@ -8,6 +8,10 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        #result, output {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -24,13 +28,13 @@
         <br>
         <br>
 
-        <input type="button" value="Somar" onclick="resultado.innerHTML = Number(in1.value) + Number(in2.value); resultado.style.display = 'inline'">
+        <input type="button" value="Somar" onclick="resultado.innerHTML = Number(in1.value) + Number(in2.value); resultado.style.display = 'inline'; result.style.display = 'inline'">
         <input type="reset" value="Limpar">
 
         <br>
         <br>
 
-        <label for="">Resultado: </label><output id="resultado"></output>
+        <label for="" id="result">Resultado: </label><output id="resultado"></output>
     </form>
 </body>
 </html>
