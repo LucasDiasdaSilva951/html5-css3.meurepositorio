@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-img {
-    display: flex;
-    align-items: flex-start;
-}
-
 #headset > img {
     height: 150px;
 }

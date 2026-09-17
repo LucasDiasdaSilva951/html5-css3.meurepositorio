@@ -22,6 +22,8 @@ p {
 
 img {
     background-color: rgb(197, 193, 193);
+    display: flex;
+    align-items: flex-start;
 }
 
 #tituloprinc1 {
