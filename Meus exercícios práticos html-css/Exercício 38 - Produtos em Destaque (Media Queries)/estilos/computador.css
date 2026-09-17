@@ -1,27 +1,17 @@
 @charset "UTF-8";
 
+#produtos {
+    display: flex;
+    flex-direction: column;
+}
+
 #headset, #mouse, #teclado {
-    font-weight: bolder;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.527);
-    background-color: rgba(175, 235, 240, 0.808);
-    border-style: groove;
-    border-color: black;
-    padding: 15px;
+    margin: 30px;
 }
 
 img {
     width: 300px;
     height: 250px;
-}
-
-input {
-    background-color: rgb(49, 49, 255);
-    color: white;
-    font-weight: bolder;
-    border-radius: 10px;
-    width: 300px;
-    padding: 10px;
 }
