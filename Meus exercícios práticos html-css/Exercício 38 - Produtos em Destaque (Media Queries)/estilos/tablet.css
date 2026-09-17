@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+}
+
+#headset, #mouse, #teclado {
+    height: 100px;
+}
+
+#headset > img {
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    bottom: 415px;
+    left: 20px;
+}
+
+#mouse > img {
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    bottom: 280px;
+    left: 20px;
+}
+
+#teclado > img {
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    bottom: 133px;
+    left: 20px;
+}
+
+#teclado > h3 {
+    font-size: 18px;
+    position: absolute;
+    top: 440px;
+    right: 180px;
+}
+
+input#botao1 {
+    background-color: rgb(49, 49, 255);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 93%;
+    height: 7%;
+    padding: 5px;
+    position: absolute;
+    top: 190px;
+}
+
+input#botao2 {
+    background-color: rgb(49, 49, 255);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 93%;
+    height: 7%;
+    padding: 5px;
+    position: absolute;
+    top: 325px;
+}
+
+input#botao3 {
+    background-color: rgb(49, 49, 255);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    width: 93%;
+    height: 6%;
+    padding: 2px;
+    position: absolute;
+    top: 468px;
+}
