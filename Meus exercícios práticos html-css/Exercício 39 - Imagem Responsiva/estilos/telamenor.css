@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body {
+    background-image: url(../imagens/fundovermelho.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
