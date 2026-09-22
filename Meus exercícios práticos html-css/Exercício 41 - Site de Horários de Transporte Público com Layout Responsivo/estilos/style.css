@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --azulclaro: rgb(27, 126, 224);
+    --azul: blue;
+    --branco: white;
+    --cordefundo: rgb(24, 24, 116);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: var(--cordefundo);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+    row-gap: 0px;
+    flex-wrap: wrap;
+    text-shadow: 1px 1px 0px black;
+}
+
+header > h1 {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--azulclaro);
+}
+
+header > h1 > span {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--branco);
+    padding-right: 5px;
+}
+
+header > h1 > span > img {
+    height: 40px;
+    padding-right: 5px;
+}
+
+header #burger {
+    color: var(--branco);
+    cursor: pointer;
+    padding: 5px;
+}
+
+header #burger:hover {
+    background-color: rgba(0, 0, 0, 0.253);
+    transition: 0.3s;
+}
+
+header > nav {
+    display: none;
+    font-size: 20px;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    border-color: var(--azul);
+    color: white;
+    padding: 15px;
+}
+
+header > nav > ul > li > a:hover {
+    border-bottom: 2px solid var(--azul);
+    transition: 0.5s;
+}
+
+main > #seção1 {
+    background-image: url(../imagens/img-onibus-1.jpg);
+    background-position: bottom right;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+main #seção1 p {
+    color: var(--branco);
+    font-weight: bolder;
+}
+
+main #seção1 #linha302 {
+    background-color: var(--azulclaro);
+    padding: 5px;
+    width: 90px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+main #seção1 #direção {
+    font-size: 3.5em;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.425);
+}
+
+main #seção1 #legenda {
+    font-size: 19px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+}
