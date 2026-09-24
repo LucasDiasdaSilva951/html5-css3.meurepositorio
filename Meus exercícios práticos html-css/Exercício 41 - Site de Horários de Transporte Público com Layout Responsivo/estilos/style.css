@@ -1,23 +1,29 @@
 @charset "UTF-8";
 
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 :root {
+    --fontealternativa: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+
     --azulclaro: rgb(27, 126, 224);
+
     --azul: blue;
+    
+    --azulescuro: darkblue;
+    
     --branco: white;
-    --cordefundo: rgb(24, 24, 116);
+    
+    --cordefundoheader: rgb(24, 24, 116);
+    
+    --cordefundomain: whitesmoke;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-    background-color: var(--cordefundo);
+    background-color: var(--cordefundoheader);
     padding: 15px;
     display: flex;
     align-items: center;
@@ -56,8 +62,10 @@ header #burger {
 }
 
 header #burger:hover {
+    border-radius: 50%;
+    border-spacing: 10px;
     background-color: rgba(0, 0, 0, 0.253);
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 header > nav {
@@ -79,8 +87,25 @@ header > nav > ul > li > a {
 }
 
 header > nav > ul > li > a:hover {
+    background-color: rgba(0, 0, 0, 0.253);
     border-bottom: 2px solid var(--azul);
     transition: 0.5s;
+}
+
+main > h1 {
+    font-size: 25px;
+    text-align: center;
+    color: var(--azul);
+    background-color: var(--cordefundomain);
+    padding: 20px;
+    margin: auto;
+}
+
+main > h1:hover {
+    transition: 0.2s;
+    color: gray;
+    cursor: pointer;
+    font-size: 23px;
 }
 
 main > #seção1 {
@@ -112,6 +137,208 @@ main #seção1 #direção {
 }
 
 main #seção1 #legenda {
-    font-size: 19px;
+    font-size: 15px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.425);
+    font-family: var(--fontealternativa);
+}
+
+main > #seção2 {
+    display: flex;
+    flex-direction: row;
+    font: bolder 17px var(--fontealternativa);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
+    padding-left: 8px;
+    background-color: var(--cordefundomain);
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.356);
+}
+
+main > #seção2 > p {
+    display: flex;
+    align-items: center;
+    color: var(--azulescuro);
+    font-weight: bolder;
+}
+
+main > #seção2 > p > img {
+    height: 18px;
+} 
+
+main > #seção3 {
+    display: flex;
+    align-items: center;
+    padding: 13px;
+    background-color: var(--cordefundomain);
+    font-family: var(--fontealternativa);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
+}
+
+main > #seção3 > p {
+    font-size: 30px;
+    color: var(--azulescuro);
+    font-weight: bolder;
+}
+
+main > #seção3 > p > img {
+    height: 23px;
+    display: flex;
+    align-items: center;
+}
+
+main > #seção3 > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    list-style-type: none;
+    color: var(--azulescuro);
+    font-weight: bolder;
+}
+
+main > #seção3 > ul > li#horario1 {
+    background-color: rgb(226, 247, 226);
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 194);
+    border-style: solid;
+    padding: 5px;
+}
+
+main > #seção3 > ul > li#horario2 {
+    background-color: rgb(226, 247, 226);
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 194);
+    border-style: solid;
+    padding: 5px;
+}
+
+main > #seção3 > ul > li#horario3 {
+    background-color: rgb(226, 247, 226);
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 194);
+    border-style: solid;
+    padding: 5px;
+}
+
+main > #seção3 > ul > li#horario4 {
+    background-color: rgb(226, 247, 226);
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 194);
+    border-style: solid;
+    padding: 5px;
+}
+
+main > #seção3 > ul > li#horario5 {
+    background-color: rgb(226, 247, 226);
+    text-align: center;
+    width: 50vw;
+    border-radius: 10px;
+    border-color: rgb(194, 229, 194);
+    border-style: solid;
+    padding: 5px;
+}
+
+main > #seção3 > ul > li#horario1:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--branco);
+    border-color: greenyellow;
+    background-color: darkgreen;
+    transform: translate(0px, -2px);
+    padding: 3px;
+}
+
+main > #seção3 > ul > li#horario2:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--branco);
+    border-color: greenyellow;
+    background-color: darkgreen;
+    transform: translate(0px, -2px);
+    padding: 3px;
+}
+
+main > #seção3 > ul > li#horario3:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--branco);
+    border-color: greenyellow;
+    background-color: darkgreen;
+    transform: translate(0px, -2px);
+    padding: 3px;
+}
+
+main > #seção3 > ul > li#horario4:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--branco);
+    border-color: greenyellow;
+    background-color: darkgreen;
+    transform: translate(0px, -2px);
+    padding: 3px;
+}
+
+main > #seção3 > ul > li#horario5:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    color: var(--branco);
+    border-color: greenyellow;
+    background-color: darkgreen;
+    transform: translate(0px, -2px);
+    padding: 3px;
+}
+
+main > #seção4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cordefundomain);
+    padding: 30px;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.356);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
+}
+
+main > #seção4 > p {
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--azulescuro);
+}
+
+main > #seção4 > p > img {
+    height: 20px;
+}
+
+main > #seção4 > input {
+    background-color: var(--azulclaro);
+    color: var(--branco);
+    font-weight: bolder;
+    height: 35px;
+    width: 300px;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 1.5px 1px 0px rgba(0, 0, 0, 0.384);
+}
+
+main > #seção4 > input:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+    transition: 0.3s;
+    transform: translate(0px, 5px);
+    height: 33px;
+}
+
+footer {
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fontealternativa);
+    font-weight: bolder;
+    padding: 10px;
+    background-color: var(--cordefundoheader);
+    height: 50px;
 }
