@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 1025px) {
+    header > span#burger {
+        display: none;
+    }
+
+    header > nav {
+        display: block!important;
+    }
+
+    main > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main > div > * {
+        width: 400px;
+    }
+
+    main > div > #seção3 > ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    main > div > #seção3 > ul > li {
+        width: 50px!important;
+    }
+    
+    main > div > #seção4 > input {
+        width: 380px;
+    }
+}

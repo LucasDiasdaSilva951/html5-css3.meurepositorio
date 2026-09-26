@@ -27,7 +27,6 @@ header {
     padding: 15px;
     display: flex;
     align-items: center;
-    column-gap: 190px;
     row-gap: 0px;
     flex-wrap: wrap;
     text-shadow: 1px 1px 0px black;
@@ -58,7 +57,9 @@ header > h1 > span > img {
 header #burger {
     color: var(--branco);
     cursor: pointer;
-    padding: 5px;
+    padding: 20px;
+    position: absolute;
+    right: 0;
 }
 
 header #burger:hover {
@@ -90,6 +91,17 @@ header > nav > ul > li > a:hover {
     background-color: rgba(0, 0, 0, 0.253);
     border-bottom: 2px solid var(--azul);
     transition: 0.5s;
+}
+
+main {
+    background-color: var(--cordefundomain);
+}
+
+main > div > #seção2, #seção3, #seção4 {
+    border-color: rgba(66, 117, 82, 0.671);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 main > h1 {
@@ -132,7 +144,7 @@ main #seção1 #linha302 {
 }
 
 main #seção1 #direção {
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.726);
 }
 
@@ -142,29 +154,27 @@ main #seção1 #legenda {
     font-family: var(--fontealternativa);
 }
 
-main > #seção2 {
+main > div > #seção2 {
+    margin: 10px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     font: bolder 17px var(--fontealternativa);
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
     padding-left: 8px;
-    background-color: var(--cordefundomain);
     box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.356);
 }
 
-main > #seção2 > p {
+main > div > #seção2 > p {
     display: flex;
     align-items: center;
     color: var(--azulescuro);
     font-weight: bolder;
 }
 
-main > #seção2 > p > img {
-    height: 18px;
-} 
-
-main > #seção3 {
+main > div > #seção3 {
+    margin: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 13px;
     background-color: var(--cordefundomain);
@@ -172,19 +182,19 @@ main > #seção3 {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
 }
 
-main > #seção3 > p {
+main > div > #seção3 > p {
     font-size: 30px;
     color: var(--azulescuro);
     font-weight: bolder;
 }
 
-main > #seção3 > p > img {
+main > div > #seção3 > p > img {
     height: 23px;
     display: flex;
     align-items: center;
 }
 
-main > #seção3 > ul {
+main > div > #seção3 > ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,7 +204,7 @@ main > #seção3 > ul {
     font-weight: bolder;
 }
 
-main > #seção3 > ul > li#horario1 {
+main > div > #seção3 > ul > li#horario1 {
     background-color: rgb(226, 247, 226);
     text-align: center;
     width: 50vw;
@@ -204,7 +214,7 @@ main > #seção3 > ul > li#horario1 {
     padding: 5px;
 }
 
-main > #seção3 > ul > li#horario2 {
+main > div > #seção3 > ul > li#horario2 {
     background-color: rgb(226, 247, 226);
     text-align: center;
     width: 50vw;
@@ -214,7 +224,7 @@ main > #seção3 > ul > li#horario2 {
     padding: 5px;
 }
 
-main > #seção3 > ul > li#horario3 {
+main > div > #seção3 > ul > li#horario3 {
     background-color: rgb(226, 247, 226);
     text-align: center;
     width: 50vw;
@@ -224,7 +234,7 @@ main > #seção3 > ul > li#horario3 {
     padding: 5px;
 }
 
-main > #seção3 > ul > li#horario4 {
+main > div > #seção3 > ul > li#horario4 {
     background-color: rgb(226, 247, 226);
     text-align: center;
     width: 50vw;
@@ -234,7 +244,7 @@ main > #seção3 > ul > li#horario4 {
     padding: 5px;
 }
 
-main > #seção3 > ul > li#horario5 {
+main > div > #seção3 > ul > li#horario5 {
     background-color: rgb(226, 247, 226);
     text-align: center;
     width: 50vw;
@@ -244,57 +254,53 @@ main > #seção3 > ul > li#horario5 {
     padding: 5px;
 }
 
-main > #seção3 > ul > li#horario1:hover {
+main > div > #seção3 > ul > li#horario1:hover {
     cursor: pointer;
     transition: 0.2s;
     color: var(--branco);
-    border-color: greenyellow;
+    border-color: rgb(186, 218, 138);
     background-color: darkgreen;
-    transform: translate(0px, -2px);
     padding: 3px;
 }
 
-main > #seção3 > ul > li#horario2:hover {
+main > div > #seção3 > ul > li#horario2:hover {
     cursor: pointer;
     transition: 0.2s;
     color: var(--branco);
-    border-color: greenyellow;
+    border-color: rgb(186, 218, 138);
     background-color: darkgreen;
-    transform: translate(0px, -2px);
     padding: 3px;
 }
 
-main > #seção3 > ul > li#horario3:hover {
+main > div > #seção3 > ul > li#horario3:hover {
     cursor: pointer;
     transition: 0.2s;
     color: var(--branco);
-    border-color: greenyellow;
+    border-color: rgb(186, 218, 138);
     background-color: darkgreen;
-    transform: translate(0px, -2px);
     padding: 3px;
 }
 
-main > #seção3 > ul > li#horario4:hover {
+main > div > #seção3 > ul > li#horario4:hover {
     cursor: pointer;
     transition: 0.2s;
     color: var(--branco);
-    border-color: greenyellow;
+    border-color: rgb(186, 218, 138);
     background-color: darkgreen;
-    transform: translate(0px, -2px);
     padding: 3px;
 }
 
-main > #seção3 > ul > li#horario5:hover {
+main > div > #seção3 > ul > li#horario5:hover {
     cursor: pointer;
     transition: 0.2s;
     color: var(--branco);
-    border-color: greenyellow;
+    border-color: rgb(186, 218, 138);
     background-color: darkgreen;
-    transform: translate(0px, -2px);
     padding: 3px;
 }
 
-main > #seção4 {
+main > div > #seção4 {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -304,17 +310,17 @@ main > #seção4 {
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.144);
 }
 
-main > #seção4 > p {
+main > div > #seção4 > p {
     font-size: 28px;
     font-weight: bolder;
     color: var(--azulescuro);
 }
 
-main > #seção4 > p > img {
+main > div > #seção4 > p > img {
     height: 20px;
 }
 
-main > #seção4 > input {
+main > div > #seção4 > input {
     background-color: var(--azulclaro);
     color: var(--branco);
     font-weight: bolder;
@@ -325,11 +331,11 @@ main > #seção4 > input {
     box-shadow: 1.5px 1px 0px rgba(0, 0, 0, 0.384);
 }
 
-main > #seção4 > input:hover {
+main > div > #seção4 > input:hover {
     cursor: pointer;
     background-color: darkgreen;
     transition: 0.3s;
-    transform: translate(0px, 5px);
+    width: 250px;
     height: 33px;
 }
 
