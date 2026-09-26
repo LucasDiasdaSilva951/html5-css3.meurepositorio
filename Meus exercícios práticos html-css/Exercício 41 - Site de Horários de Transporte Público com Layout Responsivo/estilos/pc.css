@@ -26,6 +26,19 @@
         width: 400px;
     }
 
+    main > #seção1 > #linha302 {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    main > #seção1 > #direção {
+        font-size: 50px;
+    }
+    
+    main > #seção1 > #legenda {
+        font-size: 25px;
+    }
+
     main > div > #seção3 > ul {
         flex-direction: row;
         flex-wrap: wrap;
