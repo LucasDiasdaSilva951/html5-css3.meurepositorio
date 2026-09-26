@@ -9,6 +9,13 @@
         display: block!important;
     }
 
+    header > nav > ul {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        padding-right: 10px;
+    }
+
     main > div {
         display: flex;
         flex-direction: row;
