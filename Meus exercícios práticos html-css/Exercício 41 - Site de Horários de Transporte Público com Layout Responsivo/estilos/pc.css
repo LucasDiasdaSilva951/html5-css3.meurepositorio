@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 1025px) {
+* {
+    float: center;
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+@media screen and (min-width: 1024px) {
     header > span#burger {
         display: none;
     }
@@ -39,6 +45,10 @@
         font-size: 25px;
     }
     
+    main > div > #seção2 {
+        font-size: 18px;
+    }
+
     main > div > #seção3 > ul {
         flex-direction: row;
         flex-wrap: wrap;
@@ -49,7 +59,7 @@
     main > div > #seção3 > ul > li {
         width: 50px!important;
     }
-    
+
     main > div > #seção4 > input {
         width: 380px;
     }
