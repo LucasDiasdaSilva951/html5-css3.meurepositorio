@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    header {
+        position: relative;
+    }
+
     header > span#burger {
         display: none;
     }
@@ -12,7 +16,7 @@
     header > nav > ul {
         position: absolute;
         right: 0;
-        top: 15px;
+        top: 35px;
         padding-right: 10px;
     }
 
