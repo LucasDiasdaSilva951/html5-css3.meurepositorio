@@ -38,7 +38,7 @@
     main > #seção1 > #legenda {
         font-size: 25px;
     }
-
+    
     main > div > #seção3 > ul {
         flex-direction: row;
         flex-wrap: wrap;
