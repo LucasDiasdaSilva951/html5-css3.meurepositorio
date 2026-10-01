@@ -37,15 +37,8 @@ header {
     text-shadow: 1px 1px 0px black;
 }
 
-header > h1 {
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    font-size: 20px;
-    color: var(--azulclaro);
-}
 
-header > h1 > span {
+header > h1 {
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -54,9 +47,9 @@ header > h1 > span {
     padding-right: 5px;
 }
 
-header > h1 > span > img {
-    height: 40px;
-    padding-right: 5px;
+header > span#onibus {
+    font-size: 2.5em;
+    color: var(--azulclaro);
 }
 
 header #burger {
@@ -65,7 +58,7 @@ header #burger {
     padding: 6px;
     position: absolute;
     right: 8px;
-    top: 30px;
+    top: 25px;
 }
 
 header #burger:hover {
@@ -193,15 +186,13 @@ main > div > #seção3 {
 }
 
 main > div > #seção3 > p {
-    font-size: 30px;
+    font-size: 35px;
     color: var(--azulescuro);
     font-weight: bolder;
 }
 
-main > div > #seção3 > p > img {
-    height: 23px;
-    display: flex;
-    align-items: center;
+main > div > #seção3 > p > span#hora {
+    font-size: 0.8em;
 }
 
 main > div > #seção3 > ul {
@@ -321,13 +312,13 @@ main > div > #seção4 {
 }
 
 main > div > #seção4 > p {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bolder;
     color: var(--azulescuro);
 }
 
-main > div > #seção4 > p > img {
-    height: 20px;
+main > div > #seção4 > p > span#dinheiro {
+    font-size: 0.9em;
 }
 
 main > div > #seção4 > input {
