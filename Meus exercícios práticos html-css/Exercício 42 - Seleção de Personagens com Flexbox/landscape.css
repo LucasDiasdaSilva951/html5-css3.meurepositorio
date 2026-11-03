@@ -5,4 +5,9 @@
         display: flex;
         flex-flow: row wrap;
     }
+
+    main > article {
+        padding: 50px;
+        width: 350px;
+    }
 }
