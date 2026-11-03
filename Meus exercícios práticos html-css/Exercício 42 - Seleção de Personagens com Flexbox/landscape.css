@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@media (orientation: landscape) {
+    main {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
