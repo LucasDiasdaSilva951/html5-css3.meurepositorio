@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("./imagens/imagem-fundo-castelo.png");
+    background-size: cover;
+    background-position: right center;
+}
+
+main  {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main > section {
+    padding: 15px;
+}
+
+main > section > div.classes {
+    border: 10px solid transparent;
+    border-image: url('./imagens/borda-fantasia.png') 160 stretch;
+    border-width: 50px;
+}
+
+main > section > div.classes > img {
+    height: 180px;  
+}
+
+main > section > div.classes > div.descrição > p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
