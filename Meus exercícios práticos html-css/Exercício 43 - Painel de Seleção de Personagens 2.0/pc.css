@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+
+@media (min-width: 1025px) {
+    main {
+    border-width: 75px;
+    }
+
+    main > section > div.classes > img.personagens {
+        height: 250px;
+        width: 96.5%;
+    }
+
+    main > section > div.classes > img.borda {
+    height: 65%;
+    width: calc( 100% + 10px);
+    position: absolute;
+    left: -10px;
+    bottom: -33px;
+    }
+}

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@media (min-width: 850px) {
+    main {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    }
+
+    main > section {
+        display: flex;
+        flex-flow: row wrap;     
+        width: 100%;   
+    }
+    
+    main > section > div.classes {
+        border-width: 57px;
+        width: 48%;
+        position: relative;
+    }
+
+    main > section > div.classes > img.personagens {
+    height: 150px;
+    width: 96.5%;
+    }
+
+    main > section > div.classes > img.borda {
+    height: 85%;
+    width: calc( 100% + 10px);
+    position: absolute;
+    left: -10px;
+    bottom: -33px;
+    }
+
+    main > section > div.classes > div.descrição {
+        width: 95%;
+    }
+
+    main > section > div.classes > div.descrição > p {
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+}
