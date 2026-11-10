@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        main#conteiner {
+            background-color: rgb(172, 172, 218);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 200px;
+        }
+
+        section.item {
+            background-color: lightgreen;
+            padding: 20px;
+            border: 1px solid black;
+            flex-basis: 100px;
+        }
+
+        section#i1 {
+            order: 2;
+            align-self: flex-end;
+        }
+
+        section#i2 {
+            order: 0;
+            align-self: stretch;
+        }
+
+        section#i3 {
+            order: -1;
+            align-self: flex-start;
+        }
+
+        section#i4 {
+            order: -2;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <main id="conteiner">
+        <section class="item" id="i1">A</section>
+        <section class="item" id="i2">B</section>
+        <section class="item" id="i3">C</section>
+        <section class="item" id="i4">D</section>
+    </main>
+</body>
+</html>
