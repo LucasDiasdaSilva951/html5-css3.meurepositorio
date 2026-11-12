@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício básico de flexbox</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.conteiner {
+            background-color: white;
+            display: flex;
+            flex-flow: row nowrap;
+            border-radius: 10px;
+        }
+
+        div.item {
+            background-color: yellow;
+            border: 3px solid blue;
+            flex-basis: 150px;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 5px;
+            text-align: center;
+        }
+
+        div#x1 {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#x2 {
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#x3 {
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="x1">Olá,</div>
+        <div class="item" id="x2">Pequeno</div>
+        <div class="item" id="x3">Gafanhoto!</div>
+    </div>
+</body>
+</html>
