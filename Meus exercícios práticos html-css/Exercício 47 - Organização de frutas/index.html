@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas</title>
+    <style>
+        main {
+            background-color: rgb(94, 94, 35);
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section {
+            background-color: rgb(103, 111, 119); 
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section#i1 {
+            flex-basis: 100px;
+            flex-grow: 2;
+            flex-shrink: 1;
+            background-color: goldenrod;
+            order: 2;
+        }
+
+        section#i2 {
+            flex-basis: 120px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            background-color: rgb(185, 97, 97);
+            order: 3;
+        }
+
+        section#i3 {
+            flex-basis: 100px;
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: yellow;
+            order: 1;
+        }
+
+        section#i4 {
+            flex: 1 1 100px;
+            background-color: orangered;
+            order: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frutas que eu mais gosto</h1>
+    <main>
+        <section id="i1">Segundo lugar: Abacaxi</section>
+        <section id="i2">Terceiro lugar: Maçã</section>
+        <section id="i3">Primeiro lugar: Banana</section>
+        <section id="i4">Quarto lugar: Manga</section>
+    </main>
+</body>
+</html>

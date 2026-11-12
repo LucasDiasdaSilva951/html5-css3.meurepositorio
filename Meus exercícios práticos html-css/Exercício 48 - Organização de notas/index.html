@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <style>
+        main {
+            background-color: rgb(226, 226, 161);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: stretch;
+            align-content: space-evenly;
+            gap: 12px;
+        }
+
+        section {
+            background-color: rgb(193, 202, 211); 
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section#i1 {
+            order: 3;
+            flex-basis: 120px;
+        }
+
+        section#i2 {
+            order: 1;
+            flex-grow: 2;
+        }
+
+        section#i3 {
+            order: 2;
+            flex-shrink: 0;
+        }
+
+        section#i4 {
+            align-self: flex-start;
+            flex: 1 1 150px;
+        }
+
+        section#i5 {
+            align-self: flex-end;
+        }
+
+        section#i6 {
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Melhores notas: Da maior para a menor</h1>
+    <main>
+        <section id="i1">Nota 1</section>
+        <section id="i2">Nota 2</section>
+        <section id="i3">Nota 3</section>
+        <section id="i4">Nota 4</section>
+        <section id="i5">Nota 5</section>
+        <section id="i6">Nota 6</section>
+    </main>
+</body>
+</html>

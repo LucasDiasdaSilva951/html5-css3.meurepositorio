@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <style>
+        main {
+            background-color: rgb(159, 159, 214);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-between;
+            gap: 15px;
+        }
+
+        section {
+            background-color: rgb(103, 111, 119); 
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        section#i1 {
+            order: 2;
+        }
+
+        section#i2 {
+            order: 1;
+        }
+
+        section#i3 {
+            order: 3;
+        }
+
+        section#i4 {
+            align-self: flex-end;
+        }
+
+        section#i5 {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ordem de prioridade para pagamento:</h1>
+    <main>
+        <section id="i1">Funcionário 2</section>
+        <section id="i2">Funcionário 1</section>
+        <section id="i3">Funcionário 3</section>
+        <section id="i4">Funcionário 4</section>
+        <section id="i5">Funcionário 5</section>
+    </main>
+</body>
+</html>
